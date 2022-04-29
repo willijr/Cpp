@@ -24,6 +24,8 @@ int main()																		//main function
 				low = arraySize;												//assigning the array spot for the lowest volt
 			else if (volt[hi] < volt[arraySize])								//if the next item is larger than voltHi
 				hi = arraySize;													//assigning the array spot for the highest volt
+		        else
+				cout << "There were matches found, or an error has occurred";                           //exceptions
 		}
 		cout << "The lowest voltage was: " << volt[low] 						//displaying the lowest voltage
 			 << " volts, \nwhich occurred at: " << time[low] 					//displaying the time of the lowest volt
